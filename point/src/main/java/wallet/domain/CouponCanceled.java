@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.*;
 @Data
 @ToString
-public class CouponPurchased extends AbstractEvent {
+public class CouponCanceled extends AbstractEvent {
 
     private Long id;
     private Long price;

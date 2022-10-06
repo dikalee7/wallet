@@ -77,6 +77,31 @@ public class Point  {
 
         
     }
+    public static void addPoint(CouponCanceled couponCanceled){
+
+        /** Example 1:  new item 
+        Point point = new Point();
+        repository().save(point);
+
+        PointsDeducted pointsDeducted = new PointsDeducted(point);
+        pointsDeducted.publishAfterCommit();
+        */
+
+        /** Example 2:  finding and process
+        
+        repository().findById(couponCanceled.get???()).ifPresent(point->{
+            
+            point // do something
+            repository().save(point);
+
+            PointsDeducted pointsDeducted = new PointsDeducted(point);
+            pointsDeducted.publishAfterCommit();
+
+         });
+        */
+
+        
+    }
 
 
 }

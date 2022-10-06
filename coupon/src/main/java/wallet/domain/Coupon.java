@@ -46,6 +46,12 @@ public class Coupon  {
     
     
     private String buyer;
+    
+    
+    
+    
+    
+    private String status;
 
     @PostPersist
     public void onPostPersist(){
@@ -63,6 +69,11 @@ public class Coupon  {
 
 
 
+    public void cancelCoupon(){
+        CouponCanceled couponCanceled = new CouponCanceled(this);
+        couponCanceled.publishAfterCommit();
+
+    }
 
 
 

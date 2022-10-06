@@ -71,6 +71,7 @@
                     { text: "name", value: "name" },
                     { text: "type", value: "type" },
                     { text: "buyer", value: "buyer" },
+                    { text: "status", value: "status" },
                 ],
             coupon : [],
             newValue: {},
@@ -92,6 +93,7 @@
                 'name': '',
                 'type': '',
                 'buyer': '',
+                'status': '',
             }
         },
         methods: {

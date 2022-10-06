@@ -14,6 +14,7 @@ public class CouponPurchased extends AbstractEvent {
     private String name;
     private String type;
     private String buyer;
+    private String status;
 
     public CouponPurchased(Coupon aggregate){
         super(aggregate);

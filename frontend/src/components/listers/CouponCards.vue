@@ -72,6 +72,7 @@
                 'name': '',
                 'type': '',
                 'buyer': '',
+                'status': '',
             }
         },
         methods:{

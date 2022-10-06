@@ -2,11 +2,12 @@ package wallet.domain;
 
 import wallet.domain.*;
 import wallet.infra.AbstractEvent;
-import lombok.*;
 import java.util.*;
+import lombok.*;
+
 @Data
 @ToString
-public class CouponPurchased extends AbstractEvent {
+public class CouponCanceled extends AbstractEvent {
 
     private Long id;
     private Long price;
@@ -14,6 +15,11 @@ public class CouponPurchased extends AbstractEvent {
     private String type;
     private String buyer;
     private String status;
+
+    public CouponCanceled(Coupon aggregate){
+        super(aggregate);
+    }
+    public CouponCanceled(){
+        super();
+    }
 }
-
-
