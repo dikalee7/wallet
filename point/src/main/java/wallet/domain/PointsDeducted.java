@@ -1,9 +1,9 @@
 package wallet.domain;
 
-import wallet.domain.*;
-import wallet.infra.AbstractEvent;
 import java.util.*;
 import lombok.*;
+import wallet.domain.*;
+import wallet.infra.AbstractEvent;
 
 @Data
 @ToString
@@ -13,10 +13,11 @@ public class PointsDeducted extends AbstractEvent {
     private Long amount;
     private String holder;
 
-    public PointsDeducted(Point aggregate){
+    public PointsDeducted(Point aggregate) {
         super(aggregate);
     }
-    public PointsDeducted(){
+
+    public PointsDeducted() {
         super();
     }
 }

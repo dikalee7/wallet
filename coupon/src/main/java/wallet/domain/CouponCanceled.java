@@ -1,9 +1,9 @@
 package wallet.domain;
 
-import wallet.domain.*;
-import wallet.infra.AbstractEvent;
 import java.util.*;
 import lombok.*;
+import wallet.domain.*;
+import wallet.infra.AbstractEvent;
 
 @Data
 @ToString
@@ -16,10 +16,11 @@ public class CouponCanceled extends AbstractEvent {
     private String buyer;
     private String status;
 
-    public CouponCanceled(Coupon aggregate){
+    public CouponCanceled(Coupon aggregate) {
         super(aggregate);
     }
-    public CouponCanceled(){
+
+    public CouponCanceled() {
         super();
     }
 }
